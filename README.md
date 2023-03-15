@@ -1,12 +1,12 @@
 # ELK-Stack-Setup
 This install ELK Stack (Elasticsearch, Logstash, Kibana) on Ubuntu 22.04
 
-Topic
-[การติดตั้ง Java บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts)
-[การเปิดและปิดใช้งาน firewall ports บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts)
-[การติดตั้งซอฟแวร์ Elasticsearch บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts)
-[การติดตั้งซอฟแวร์ Logstash บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts)
-[การติดตั้งซอฟแวร์ Kibana บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts)
+Topic <br>
+[การติดตั้ง Java บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
+[การเปิดและปิดใช้งาน firewall ports บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
+[การติดตั้งซอฟแวร์ Elasticsearch บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
+[การติดตั้งซอฟแวร์ Logstash บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
+[การติดตั้งซอฟแวร์ Kibana บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
 
 ## 👨‍💻 **การติดตั้ง Java บน Ubuntu 20.04 LTS**
 
@@ -29,7 +29,8 @@ sudo apt install apt-transport-https
 ```
 java –version
 ```
-Output:
+Output: <br>
+<br>
 <img width="277" alt="image" src="https://user-images.githubusercontent.com/88868657/225249069-385d0b0d-7195-4d68-8be2-e2b52a66931d.png">
 
 - การเข้าไปกำหนดค่าใน environment หลังจากการติดตั้ง Java เสร็จสิ้น
@@ -51,7 +52,8 @@ source /etc/environment
 ```
 echo $JAVA_HOME
 ```
-Output:
+Output: <br>
+<br>
 <img width="277" alt="image" src="https://user-images.githubusercontent.com/88868657/225249810-64c4c63d-5310-463d-a265-3552f168bba8.png">
 
 ## 👨‍💻 **การเปิดและปิดใช้งาน firewall ports บน Ubuntu 20.04 LTS**
@@ -71,8 +73,8 @@ sudo ufw status
 ```
 sudo ufw status verbose
 ```
-Output:
-<a></a>
+Output: <br>
+<br>
 <img width="185" alt="image" src="https://user-images.githubusercontent.com/88868657/225250320-100bf732-d158-405e-bd1b-72abd0103c6a.png">
 
 - การเปิดใช้งาน port ทั้งแบบ UDP และ TCP
@@ -87,7 +89,8 @@ sudo ufw allow {PORT_NUMBER}/tcp
 ```
 sudo ufw show added
 ```
-Output:
+Output: <br>
+<br>
 <img width="220" alt="image" src="https://user-images.githubusercontent.com/88868657/225250727-91acc363-b280-4fce-8db0-bafcf8056580.png">
 
 ## 👨‍💻 **การติดตั้งซอฟแวร์ Elasticsearch บน Ubuntu 20.04 LTS**
@@ -121,7 +124,8 @@ sudo systemctl enable elasticsearch
 ```
 sudo systemctl status elasticsearch
 ```
-Output:
+Output: <br>
+<br>
 <img width="360" alt="image" src="https://user-images.githubusercontent.com/88868657/225253460-e34291b1-9b13-43f2-ab89-bbe01b54d319.png">
 
 หลังจากกำหนดค่าไฟล์คอนฟิกกูเรชัน (elasticsearch.yml) แล้วจะต้องรีสตาร์ทการทำงานโดยใช้คำสั่ง ดังต่อไปนี้
@@ -133,7 +137,8 @@ sudo systemctl restart elasticsearch
 ```
 curl -X GET "localhost:9200"
 ```
-Output:
+Output: <br>
+<br>
 <img width="176" alt="image" src="https://user-images.githubusercontent.com/88868657/225253917-cafe00a5-8efc-408e-ac3e-3e62dac50f19.png">
 
 ## 👨‍💻 **การติดตั้งซอฟต์แวร์ Logstash บน Ubuntu 20.04 LTS**
@@ -157,7 +162,8 @@ sudo systemctl enable logstash
 ```
 sudo systemctl status logstash
 ```
-Output:
+Output: <br>
+<br>
 <img width="277" alt="image" src="https://user-images.githubusercontent.com/88868657/225254662-9ae5f86a-9c53-4455-95ba-8403c31cf118.png">
 
 หลังจากกำหนดค่าไฟล์คอนฟิกกูเรชัน (conf.d) แล้วจะต้องรีสตาร์ทโดยใช้คำสั่ง ดังต่อไปนี้
@@ -187,7 +193,8 @@ sudo systemctl enable kibana
 ```
 sudo systemctl status kibana
 ```
-Output:
+Output: <br>
+<br>
 <img width="277" alt="image" src="https://user-images.githubusercontent.com/88868657/225255532-f4aaffb5-d78a-42c5-811c-649e50f38362.png">
 
 หลังจากกำหนดค่าไฟล์คอนฟิกกูเรชัน (kibana.yml) แล้วต้องรีสตาร์ทโดยใช้คำสั่ง ดังต่อไปนี้
