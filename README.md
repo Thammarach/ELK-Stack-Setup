@@ -3,7 +3,7 @@ This install ELK Stack (Elasticsearch, Logstash, Kibana) on Ubuntu 22.04
 
 Topic <br>
 [การติดตั้ง Java บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
-[การเปิดและปิดใช้งาน firewall ports บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
+[การเปิดและปิดใช้งาน firewall ports บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup#-การเปิดและปิดใช้งาน-firewall-ports-บน-ubuntu-2004-lts) <br>
 [การติดตั้งซอฟแวร์ Elasticsearch บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
 [การติดตั้งซอฟแวร์ Logstash บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
 [การติดตั้งซอฟแวร์ Kibana บน Ubuntu 20.04 LTS](https://github.com/Thammarach/ELK-Stack-Setup/edit/main/README.md#-การติดตั้ง-java-บน-ubuntu-2004-lts) <br>
