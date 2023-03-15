@@ -1,7 +1,7 @@
 # ELK-Stack-Setup
 This install ELK Stack (Elasticsearch, Logstash, Kibana) on Ubuntu 22.04
 
-👨‍💻 **การติดตั้ง Java บน Ubuntu 20.04 LTS**
+## 👨‍💻 **การติดตั้ง Java บน Ubuntu 20.04 LTS**
 
 - การเข้าใช้งานในฐานะสิทธิ์ระดับ Superuser
 ```
@@ -47,7 +47,7 @@ echo $JAVA_HOME
 Output:
 <img width="277" alt="image" src="https://user-images.githubusercontent.com/88868657/225249810-64c4c63d-5310-463d-a265-3552f168bba8.png">
 
-👨‍💻 **การเปิดและปิดใช้งาน firewall ports บน Ubuntu 20.04 LTS**
+## 👨‍💻 **การเปิดและปิดใช้งาน firewall ports บน Ubuntu 20.04 LTS**
 
 - การเริ่มและหยุดใช้งาน UFW
 ```
@@ -83,7 +83,7 @@ sudo ufw show added
 Output:
 <img width="220" alt="image" src="https://user-images.githubusercontent.com/88868657/225250727-91acc363-b280-4fce-8db0-bafcf8056580.png">
 
-👨‍💻 **การติดตั้งซอฟแวร์ Elasticsearch บน Ubuntu 20.04 LTS**
+## 👨‍💻 **การติดตั้งซอฟแวร์ Elasticsearch บน Ubuntu 20.04 LTS**
 
 - ดาวน์โหลดและติดตั้งคีย์ public key
 ```
@@ -129,7 +129,7 @@ curl -X GET "localhost:9200"
 Output:
 <img width="176" alt="image" src="https://user-images.githubusercontent.com/88868657/225253917-cafe00a5-8efc-408e-ac3e-3e62dac50f19.png">
 
-👨‍💻 **การติดตั้งซอฟต์แวร์ Logstash บน Ubuntu 20.04 LTS**
+## 👨‍💻 **การติดตั้งซอฟต์แวร์ Logstash บน Ubuntu 20.04 LTS**
 
 - สามารถติดตั้ง Logstash โดยใช้คำสั่งด้านล่าง ดังต่อไปนี้
 ```
@@ -159,7 +159,7 @@ Output:
 sudo systemctl restart logstash
 ```
 
-👨‍💻 **การติดตั้งซอฟต์แวร์ Kibana บน Ubuntu 20.04 LTS**
+## 👨‍💻 **การติดตั้งซอฟต์แวร์ Kibana บน Ubuntu 20.04 LTS**
 
 - สามารถติดตั้ง kibana โดยใช้คำสั่งด้านล่าง ดังต่อไปนี้
 ```
